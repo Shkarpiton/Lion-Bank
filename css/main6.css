@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    margin:0 ;
+    font-family: Open Sans;
+}
+button{
+    outline: none;
+    border:1px solid transparent ;
+    cursor: pointer;
+}
+ul,li{
+    list-style:none; padding:0 ; margin: 0;
+}
+a {
+    text-decoration: none;
+}
+input , textarea{
+    outline: none;
+    border:1px solid transparent ;
+}
+.container{
+    margin: 0 auto;
+}
+.wrapper{
+    height:100% ;
+    width: 100%;
+    overflow-x: hidden;
+}

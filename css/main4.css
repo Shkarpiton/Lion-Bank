@@ -1,0 +1,123 @@
+
+
+.form__row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    flex: 1;
+    margin-right: 15px;
+    padding: 10px 0 10px 5px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(221, 218, 218);
+    resize: none;
+}
+
+.form__input_comment {
+    height: 250px;
+}
+
+.form__input:focus {
+    background: #2B2B2B;
+}
+
+.form__input:last-child {
+    margin-right: 0;
+}
+
+
+.form__options-item-checkbox {
+    display: none;
+}
+
+.form__options-item-checkbox:checked + .form__options-item-text {
+    background-color: rgb(11, 51, 51);
+    color: white;
+}
+
+.form__row_actions {
+    justify-content: flex-end;
+}
+
+.form__btn {
+    padding: 5px;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form__btn_reset {
+    margin-right: 10px;
+    background-color: gray;
+    width: 165px;
+height: 52px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+}
+
+.form__btn_submit {
+    background: #2B2B2B;
+    width: 165px;
+height: 52px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+}
+
+.select {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(221, 218, 218);
+    color: indigo;
+}
+
+.dropdown {
+    max-width: max-content;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown__item {
+    position: absolute;
+    right: -9999px;
+    top: 190%;
+    border: 1px solid blue;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: gainsboro;
+}
+
+.dropdown__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid gainsboro;
+    top: -20px;
+    right: 20px;
+}
+
+.dropdown:hover .dropdown__item {
+    right: 0;
+    opacity: 1;
+}

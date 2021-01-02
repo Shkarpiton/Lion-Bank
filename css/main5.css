@@ -1,0 +1,58 @@
+body{
+    font-family: Open Sans;
+}
+a.btn{
+    outline: none;
+    border:1px solid transparent ;
+    padding: 17px 56px;
+    background: #DFB56D;
+    box-shadow: 0px 8px 35px rgba(223, 181, 109, 0.35);  
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+align-items: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.welcome{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(splash.png) #29282D;
+}
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 1s ;
+}
+.central__logo{
+    margin-bottom: 65px;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    35% {
+        transform: translateY(0);
+    }
+    55% {
+        transform: translateY(-15px);
+    }
+    65% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-4px);
+    }
+}
